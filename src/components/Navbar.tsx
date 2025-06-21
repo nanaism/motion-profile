@@ -1,5 +1,5 @@
+import { motion } from "framer-motion";
 import { Briefcase, Home, Mail, User } from "lucide-react";
-import { motion } from "motion/react";
 import type { NavItem } from "../types/navigation";
 
 type NavbarProps = {

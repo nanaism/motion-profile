@@ -131,7 +131,7 @@ const ProjectCard = ({
 
 const Skill = () => {
   return (
-    <>
+    <div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
           <motion.h2
@@ -195,7 +195,7 @@ const Skill = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -17,6 +17,9 @@ export const CONTACT_TWITTER_HANDLE = "@oga_aiichiro";
 export const CONTACT_TWITTER_URL = "https://x.com/oga_aiichiro";
 export const CONTACT_GITHUB_HANDLE = "nanaism";
 export const CONTACT_GITHUB_URL = `https://github.com/${CONTACT_GITHUB_HANDLE}`;
+// Misskeyの情報を追加
+export const CONTACT_MISSKEY_HANDLE = "@oga";
+export const CONTACT_MISSKEY_URL = "https://oga.aiichiro.jp/@oga";
 
 // Contact セクションのバブル要素
 export const CONTACT_METHODS = [
@@ -25,28 +28,36 @@ export const CONTACT_METHODS = [
     label: "Email",
     value: CONTACT_EMAIL,
     link: `mailto:${CONTACT_EMAIL}`,
-    position: { x: 30, y: 20 },
+    position: { x: 15, y: 10 }, // 位置を調整
   },
   {
     icon: Icons.twitter,
-    label: "X",
+    label: "X (Twitter)",
     value: CONTACT_TWITTER_HANDLE,
     link: CONTACT_TWITTER_URL,
-    position: { x: 65, y: 10 },
+    position: { x: 65, y: 5 }, // 位置を調整
   },
   {
     icon: Icons.gitHub,
     label: "GitHub",
     value: CONTACT_GITHUB_HANDLE,
     link: CONTACT_GITHUB_URL,
-    position: { x: 20, y: 50 },
+    position: { x: 5, y: 55 }, // 位置を調整
   },
   {
     icon: MessageCircle,
     label: "チャット",
-    value: "DMにてご連絡ください",
+    value: "お気軽にDMください", // 文言を少し変更
     link: CONTACT_TWITTER_URL,
-    position: { x: 75, y: 45 },
+    position: { x: 75, y: 60 }, // 位置を調整
+  },
+  // Misskeyの項目を追加
+  {
+    icon: Icons.misskey,
+    label: "Misskey",
+    value: CONTACT_MISSKEY_HANDLE,
+    link: CONTACT_MISSKEY_URL,
+    position: { x: 40, y: 45 }, // 中央に配置
   },
 ];
 

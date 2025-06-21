@@ -1,6 +1,6 @@
+import { motion, useDragControls } from "framer-motion";
 import type { LucideProps } from "lucide-react";
 import { MapPin } from "lucide-react";
-import { motion, useDragControls } from "motion/react";
 import {
   PROFILE_AVATAR_PATH,
   PROFILE_CONTACT_ITEMS,
@@ -134,14 +134,14 @@ const AnimatedWeatherIcon = () => {
 
 const Profile = () => {
   return (
-    <>
+    <motion.div className="relative">
       <AnimatedWeatherIcon />
       <ProfileHeader />
       <div className="flex flex-col md:flex-row justify-between mt-20">
         <ContactSection />
         <LocationInfo />
       </div>
-    </>
+    </motion.div>
   );
 };
 
