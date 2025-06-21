@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Layout from "./components/Layout";
+import Profile from "./components/Profile";
 import type { NavItem } from "./types/navigation";
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
 
   return (
     <Layout handleTabClick={handleTabClick} title={activeTab}>
-      {activeTab === "Profile" && <p>Profile</p>}
+      {activeTab === "Profile" && <Profile />}
       {activeTab === "About" && <p>About</p>}
       {activeTab === "Skill" && <p>Skill</p>}
       {activeTab === "Contact" && <p>Contact</p>}
