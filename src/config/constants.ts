@@ -28,15 +28,8 @@ export const CONTACT_METHODS = [
     position: { x: 30, y: 20 },
   },
   {
-    icon: Mail,
-    label: "Email",
-    value: "datealife2525@gmail.com",
-    link: "mailto:datealife2525@gmail.com",
-    position: { x: 10, y: 0 },
-  },
-  {
     icon: Icons.twitter,
-    label: "Twitter",
+    label: "X",
     value: CONTACT_TWITTER_HANDLE,
     link: CONTACT_TWITTER_URL,
     position: { x: 65, y: 10 },
@@ -54,13 +47,6 @@ export const CONTACT_METHODS = [
     value: "DMにてご連絡ください",
     link: CONTACT_TWITTER_URL,
     position: { x: 75, y: 45 },
-  },
-  {
-    icon: MessageCircle,
-    label: "チャット",
-    value: "DMにてご連絡ください",
-    link: "https://x.com/oga_aiichiro",
-    position: { x: 50, y: 30 },
   },
 ];
 
