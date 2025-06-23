@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Award, ExternalLink } from "lucide-react";
-import { animate } from "motion";
 import { useEffect, useState } from "react";
 import {
   PolarAngleAxis,
@@ -12,7 +11,6 @@ import {
 import {
   SKILL_DATA,
   SKILL_DESCRIPTION,
-  SKILL_OUTPUT,
   SKILL_PROJECTS,
 } from "../config/constants";
 
@@ -57,28 +55,28 @@ const SkillRadar = ({ data }: { data: RadarDataItem[] }) => {
 };
 
 // 数字のカウントアップアニメーション
-const AnimatedCounter = ({
-  value,
-  duration = 2,
-}: {
-  value: number;
-  duration?: number;
-}) => {
-  const [count, setCount] = useState(0);
+// const AnimatedCounter = ({
+//   value,
+//   duration = 2,
+// }: {
+//   value: number;
+//   duration?: number;
+// }) => {
+//   const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    const controls = animate(0, value, {
-      duration: duration,
-      ease: "circOut",
-      onUpdate: (latest) => setCount(Math.floor(latest)),
-    });
+//   useEffect(() => {
+//     const controls = animate(0, value, {
+//       duration: duration,
+//       ease: "circOut",
+//       onUpdate: (latest) => setCount(Math.floor(latest)),
+//     });
 
-    // クリーンアップ関数でアニメーションを停止
-    return () => controls.stop();
-  }, [value, duration]);
+//     // クリーンアップ関数でアニメーションを停止
+//     return () => controls.stop();
+//   }, [value, duration]);
 
-  return <motion.span>{count}</motion.span>;
-};
+//   return <motion.span>{count}</motion.span>;
+// };
 
 const ProjectCard = ({
   title,
@@ -154,7 +152,7 @@ const Skill = () => {
 
           <SkillRadar data={SKILL_DATA} />
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
@@ -168,7 +166,7 @@ const Skill = () => {
                 <div className="text-sm text-white/80">{output.label}</div>
               </div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
 
         <div>

@@ -66,7 +66,7 @@ export const PROFILE_CONTACT_ITEMS = [
   {
     icon: Icons.twitter,
     text: CONTACT_TWITTER_URL,
-    label: "Twitter profile",
+    label: "X profile",
   },
   {
     icon: Icons.gitHub,
@@ -87,10 +87,10 @@ export const SKILL_DESCRIPTION =
 export const SKILL_DATA = [
   { subject: "React/Next.js", value: 90 },
   { subject: "TypeScript", value: 85 },
-  { subject: "Node.js", value: 75 },
+  { subject: "Java", value: 75 },
   { subject: "UI/UX", value: 80 },
-  { subject: "Vue/Nuxt.js", value: 70 },
-  { subject: "AWS", value: 65 },
+  { subject: "AI", value: 75 },
+  { subject: "Azure", value: 55 },
 ];
 
 // 経歴書などのページがあればリンク
@@ -106,25 +106,32 @@ export const SKILL_OUTPUT = [
 // 開発者として経験したプロジェクト紹介
 export const SKILL_PROJECTS = [
   {
+    title: "民泊シェアアプリ",
+    description:
+      "Airbnbのような民泊プラットフォーム。ホストが物件を登録し、ゲストが予約・管理できるフルスタックアプリ。",
+    tech: [
+      "個人開発",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Clerk",
+      "Supabase",
+    ],
+    link: "https://yadori.aiichiro.jp",
+  },
+  {
     title: "記事・電子書籍販売アプリ",
     description:
       "知的コンテンツを有料で販売できるアプリを構築。柔軟なアクセス制限、セキュアな運用フローを実現。",
     tech: ["個人開発", "Next.js", "Tailwind CSS", "Stripe", "Auth.js"],
-    link: "#",
+    link: "https://store.aiichiro.jp",
   },
   {
-    title: "生成AIを活用したレビューアプリ",
+    title: "リアルタイムチャットアプリ",
     description:
-      "効果的なフィードバック収集のためのアプリをチームで開発。ハッカソン参加時の成果物です。",
-    tech: ["共同開発", "React", "MongoDB", "Express", "Gemini AI"],
-    link: "#",
-  },
-  {
-    title: "GitHub画像生成アプリ",
-    description:
-      "GitHub上で使用するLINEスタンプのような画像を作成できるOSSを構築・運用。テキストコミュニケーションを楽しく活性化。",
-    tech: ["OSS", "Next.js", "CloudFlare", "@vercel/og"],
-    link: "#",
+      "リアルタイムチャットアプリを開発。ユーザー登録、メッセージ送信・表示、接続管理、ビジュアルマップなど多彩な機能を実装。",
+    tech: ["個人開発", "Next.js", "TypeScript", "Socket.IO", "Tailwind CSS"],
+    link: "https://chat.aiichiro.jp",
   },
 ];
 

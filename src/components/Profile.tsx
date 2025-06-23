@@ -57,14 +57,22 @@ const ContactItem = ({ icon: Icon, text, label }: ContactItemProps) => (
 const ContactSection = () => {
   return (
     <div className="space-y-6 text-white">
-      {PROFILE_CONTACT_ITEMS.map((item, i) => (
-        <ContactItem
-          key={i}
-          icon={item.icon}
-          text={item.text}
-          label={item.label}
-        />
-      ))}
+      {PROFILE_CONTACT_ITEMS.map((item, i) => {
+        // メールの場合は mailto: にする
+        const isEmail = item.text.includes("@");
+        const href = isEmail ? `mailto:${item.text}` : item.text;
+        return (
+          <a
+            key={i}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block transition-all hover:scale-105"
+          >
+            <ContactItem icon={item.icon} text={item.text} label={item.label} />
+          </a>
+        );
+      })}
     </div>
   );
 };
