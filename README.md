@@ -1,54 +1,29 @@
-# React + TypeScript + Vite
+![FireShot Webpage Capture 020 - 'Oga Aiichiro' - www aiichiro jp](https://github.com/user-attachments/assets/6fb6ba9e-6452-4116-b4af-43a2ea77211e)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# セクション
+- ナビゲーションバー：
+- ホバー時に変化するアニメーション効果を適用。
+- ヒーローセクション：
+- 天気に応じた、ドラッグ可能な天気アイテム（雲、太陽など）を表示。
+- 自己紹介セクション：
+- タイピングアニメーションを実装。
+- スキル＆プロジェクトセクション：
+- 要素の出現アニメーションを適用。
+- コンタクトセクション：
+- アイコンがふわふわと浮遊するアニメーションや、ホバーエフェクトを実装。
 
-Currently, two official plugins are available:
+# 追加情報
+- 今回使用する API は、 https://open-meteo.com/ です。
+- この API は、特定の地域の緯度・経度から天気情報を提供します。
+- 無料でパブリックに公開されており、アクセスキーなどは必要ありません。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# ユーザーストーリー
+ - ユーザーがサイトにアクセスすると、自分のプロフィール情報が表示される
+ - TOP ページには、天気に合わせたドラッグ可能なアイテム（晴れの日は太陽、雨の日は雲など）が表示される
+ - ナビゲーションバーは、ホバーするとアイテムが拡大される
+ - 自己紹介文はタイピングアニメーション（デモでは、生成 AI 風）で表示される
+ - スキル/プロジェクトのセクションに遷移すると、順番に要素がアニメーションして画面に現れる
+ - コンタクトのセクションでは、SNS アイコンがふわふわと浮遊するアニメーションで表示されている
+ - SNS アイコンは、ホバー時に詳細情報を確認することができる。
+ - アプリケーションがデプロイされており、GitHub プロフィールや名刺代わりとして共有できる
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
