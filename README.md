@@ -38,12 +38,10 @@
 
 このプロジェクトは、以下の技術を主に使用して構築されています。
 
--   **Frontend**: (例: React, Next.js, Vue.js, TypeScript)
--   **Styling**: (例: Tailwind CSS, SCSS, Framer Motion)
+-   **Frontend**: (React, Next.js, TypeScript)
+-   **Styling**: (Tailwind CSS, Framer Motion, Shadcn/ui)
 -   **API**: [Open-Meteo API](#-open-meteo-api)
--   **Deployment**: (例: Vercel, Netlify)
-
-*(注: ここにはプロジェクトで使用した具体的な技術スタックを追記してください)*
+-   **Deployment**: (GitHub Pages)
 
 ## 🔌 APIについて: Open-Meteo API
 
