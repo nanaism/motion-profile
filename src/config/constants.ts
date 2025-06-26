@@ -106,28 +106,21 @@ export const SKILL_OUTPUT = [
 // 開発者として経験したプロジェクト紹介
 export const SKILL_PROJECTS = [
   {
-    title: "民泊シェアアプリ",
+    title: "大賀万博",
     description:
-      "Airbnbのような民泊プラットフォーム。ホストが物件を登録し、ゲストが予約・管理できるフルスタックアプリ。",
-    tech: [
-      "個人開発",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Clerk",
-      "Supabase",
-    ],
-    link: "https://yadori.aiichiro.jp",
+      "私の制作したプロジェクトを一同に集めた、ショーケースサイトです。",
+    tech: ["個人開発", "Next.js", "TypeScript", "Tailwind CSS"],
+    link: "https://portfolio.aiichiro.jp",
   },
   {
-    title: "記事・電子書籍販売アプリ",
+    title: "Oga's Knowledge Store",
     description:
       "知的コンテンツを有料で販売できるアプリを構築。柔軟なアクセス制限、セキュアな運用フローを実現。",
     tech: ["個人開発", "Next.js", "Tailwind CSS", "Stripe", "Auth.js"],
     link: "https://store.aiichiro.jp",
   },
   {
-    title: "リアルタイムチャットアプリ",
+    title: "Oga Space",
     description:
       "リアルタイムチャットアプリを開発。ユーザー登録、メッセージ送信・表示、接続管理、ビジュアルマップなど多彩な機能を実装。",
     tech: ["個人開発", "Next.js", "TypeScript", "Socket.IO", "Tailwind CSS"],
